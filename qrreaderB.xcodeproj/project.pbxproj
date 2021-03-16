@@ -107,14 +107,12 @@
 			children = (
 				AB992D9D260119EA00D1B8D0 /* AppDelegate.swift */,
 				AB992D9F260119EA00D1B8D0 /* SceneDelegate.swift */,
-				AB992DA1260119EA00D1B8D0 /* ViewController.swift */,
+				AB992DE326012D7400D1B8D0 /* Objects */,
+				AB992DDF26012D6900D1B8D0 /* Controllers */,
 				AB992DA3260119EA00D1B8D0 /* Main.storyboard */,
 				AB992DA6260119EA00D1B8D0 /* Assets.xcassets */,
 				AB992DA8260119EA00D1B8D0 /* LaunchScreen.storyboard */,
 				AB992DAB260119EA00D1B8D0 /* Info.plist */,
-				AB992DD026011AFC00D1B8D0 /* ScannerViewController.swift */,
-				AB992DD52601257300D1B8D0 /* Device.swift */,
-				AB992DDA2601292C00D1B8D0 /* GenerateQrViewController.swift */,
 			);
 			path = qrreaderB;
 			sourceTree = "<group>";
@@ -135,6 +133,24 @@
 				AB992DC1260119EA00D1B8D0 /* Info.plist */,
 			);
 			path = qrreaderBUITests;
+			sourceTree = "<group>";
+		};
+		AB992DDF26012D6900D1B8D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB992DA1260119EA00D1B8D0 /* ViewController.swift */,
+				AB992DD026011AFC00D1B8D0 /* ScannerViewController.swift */,
+				AB992DDA2601292C00D1B8D0 /* GenerateQrViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB992DE326012D7400D1B8D0 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AB992DD52601257300D1B8D0 /* Device.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
