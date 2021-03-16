@@ -15,6 +15,9 @@
 		AB992DAA260119EA00D1B8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB992DA8260119EA00D1B8D0 /* LaunchScreen.storyboard */; };
 		AB992DB5260119EA00D1B8D0 /* qrreaderBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992DB4260119EA00D1B8D0 /* qrreaderBTests.swift */; };
 		AB992DC0260119EA00D1B8D0 /* qrreaderBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992DBF260119EA00D1B8D0 /* qrreaderBUITests.swift */; };
+		AB992DD126011AFC00D1B8D0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992DD026011AFC00D1B8D0 /* ScannerViewController.swift */; };
+		AB992DD62601257300D1B8D0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992DD52601257300D1B8D0 /* Device.swift */; };
+		AB992DDB2601292C00D1B8D0 /* GenerateQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992DDA2601292C00D1B8D0 /* GenerateQrViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		AB992DBB260119EA00D1B8D0 /* qrreaderBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrreaderBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB992DBF260119EA00D1B8D0 /* qrreaderBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrreaderBUITests.swift; sourceTree = "<group>"; };
 		AB992DC1260119EA00D1B8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB992DD026011AFC00D1B8D0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		AB992DD52601257300D1B8D0 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		AB992DDA2601292C00D1B8D0 /* GenerateQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQrViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				AB992DA6260119EA00D1B8D0 /* Assets.xcassets */,
 				AB992DA8260119EA00D1B8D0 /* LaunchScreen.storyboard */,
 				AB992DAB260119EA00D1B8D0 /* Info.plist */,
+				AB992DD026011AFC00D1B8D0 /* ScannerViewController.swift */,
+				AB992DD52601257300D1B8D0 /* Device.swift */,
+				AB992DDA2601292C00D1B8D0 /* GenerateQrViewController.swift */,
 			);
 			path = qrreaderB;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB992DDB2601292C00D1B8D0 /* GenerateQrViewController.swift in Sources */,
 				AB992DA2260119EA00D1B8D0 /* ViewController.swift in Sources */,
 				AB992D9E260119EA00D1B8D0 /* AppDelegate.swift in Sources */,
 				AB992DA0260119EA00D1B8D0 /* SceneDelegate.swift in Sources */,
+				AB992DD126011AFC00D1B8D0 /* ScannerViewController.swift in Sources */,
+				AB992DD62601257300D1B8D0 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
