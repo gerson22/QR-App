@@ -7,20 +7,25 @@
 
 import UIKit
 
-class GenerateQrViewController: UIViewController {
+class GenerateQRViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = generateQRCode(from: "Hola Mundo en Swift")
-        let imv = UIImageView(frame: CGRect(x: view.frame.width/2-125, y: view.frame.height/2-125, width: 250, height: 250))
-        imv.image = image
-        self.view.addSubview(imv)
-        // Do any additional setup after loading the view.
+        let jsonObj = ["message":"Hola mundo en Swift","token":"=6787DFGSTSJJW828293838292J"]
+        //
+        guard let jsonData = try? JSONSerialization.data(withJSONObject: jsonObj, options: .prettyPrinted) else {fatalError("json data error")}
+        guard let jsonString = String.init(data: jsonData, encoding: String.Encoding.ascii) else {return}
+        //
+        let qrImage:UIImage? = self.generateQRCode(from: jsonString)
+        let imv = UIImageView(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
+        imv.center = view.center
+        imv.image = qrImage
+        view.addSubview(imv)
+        
     }
     
-
     func generateQRCode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
+        let data = string.data(using: String.Encoding.ascii)//58bytes
 
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
@@ -33,15 +38,5 @@ class GenerateQrViewController: UIViewController {
 
         return nil
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
